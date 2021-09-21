@@ -1,7 +1,75 @@
+@import "../../general.scss";
 .topbar{
     width: 100%;
     height: 70px;
-    background-color: darkblue;
+    background-color: floralwhite;
+    color: $mainColor;
     position: fixed;
     z-index: 2 ;
+    transition: all 1s ease;
+    .wrapper{
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            display: flex;
+            align-items: center;
+            .logo{
+                font-size: 25px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+            }
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+
+                .icon{
+                    font-size: 15px;
+                }
+                span{
+                    font-size: 10px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .right{
+            .humburger{
+               width: 25px; 
+               height: 20px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               cursor: pointer;
+            }
+            span{
+                width: 100%;
+                height: 3px;
+                background-color: $mainColor;
+                transform-origin: left;
+                transition: all 2s ease;
+            }
+        }
+    }
+    &.active{
+        background-color: $mainColor;
+        color: floralwhite;
+        .humburger{
+            span{
+                &:first-child{
+                    background-color: floralwhite;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: floralwhite;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
 }
