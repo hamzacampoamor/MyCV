@@ -1,3 +1,67 @@
 .home{
-    background-color: orchid;
+    background-color: floralwhite;
+    display: flex;
+    .left{
+        overflow: hidden;
+        flex: 0.5;
+        .imgContainer{
+            padding-right: 20px;
+           // overflow: hidden;
+            width: 500px;
+            height: 700pxpx;
+            background-color: gray;
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+            img{
+                height: 90%;
+            }
+        }
+    }
+    .right{
+        flex: 0.5;
+        position: relative;
+        .wrapper{
+
+            width: 100%;
+            height: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                
+                font-size: 40px;
+                font-weight:900;
+            }
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+                padding-bottom: 250px;
+                span{
+                    font-size: inherit;
+                    color: gray;
+                }
+            }
+        }
+        a{
+            left: 40%;
+            position: absolute;
+            bottom: 10px;
+            .icon{
+                padding-top: 10px;
+                width: 200px;
+                color: gray;
+                overflow: hidden;
+                animation: arrowBlink 1s infinite;
+            }
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,39 @@
+@import "../../general.scss";
+.menu{
+    width: 250px;
+    height: 100vh;
+    background-color: $mainColor;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-weight: 30;
+        color: floralwhite;
+        width: 60%;
+        li{
+            margin-bottom: 10px;
+            a{
+
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+            &:hover{
+                font-weight: 500;
+            }
+        }
+    }
+    &.active{
+        right: 0;
+    }
+}
