@@ -22,7 +22,7 @@ export default function Home() {
                     <h1>Mohamad Hamza Campo Amor</h1>
                     <h2>creative Web  <span ref={textRef}> </span></h2>
                 </div>
-                <a href="#portfolio">
+                <a href="#acount">
                     <ArrowDownward className="icon"/>
                 </a>
                 

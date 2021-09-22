@@ -1,0 +1,19 @@
+@import "../../general.scss";
+.acountlist{
+            
+            
+    overflow: hidden;
+    max-width: 70px;
+    max-height: 40px;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    &.active{
+        background-color: $mainColor;
+        color: white;
+    }
+}
