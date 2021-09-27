@@ -1,7 +1,7 @@
 import React from 'react'
 import "./home.scss"
 import {ArrowDownward} from '@material-ui/icons';
-import { init } from 'ityped'
+import{init} from 'ityped'
 import { useEffect,useRef } from 'react';
 export default function Home() {
   
